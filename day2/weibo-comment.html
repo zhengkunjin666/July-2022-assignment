@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weibo-comment</title>
+    <style>
+        .weibo-comment{
+            width: 600px;
+            height: 38px;
+            max-height: 456px;
+            font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+            font-size: 14px;
+            color: #333;  
+            background: #f0f1f4;  
+            line-height: 24px;  
+            padding: 6px 11px;
+            border: 1px solid #f0f1f4;
+            border-radius: 8px;
+            outline: none;
+            resize: none;
+            box-sizing: border-box;
+        }
+        #hide-textarea{
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            visibility: hidden;
+        }
+        ::-webkit-scrollbar{
+            width: 0px;
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.8.0.js"></script>
+</head>
+<body>
+    <textarea class="weibo-comment" name="comment" id="textarea" placeholder="发布你的评论"></textarea>
+    <textarea class="weibo-comment" name="comment" id="hide-textarea" placeholder="发布你的评论"></textarea>
+    <script>
+        $("#textarea").on('keydown keyup',function(){
+            $("#hide-textarea").val($("#textarea").val());
+            let scrollHeight=$("#hide-textarea")[0].scrollHeight;
+            let height=$("#textarea").outerHeight();
+            textareaHeight = scrollHeight==height ? scrollHeight : scrollHeight+2
+            if(textareaHeight>=158){
+                $("#textarea").css("height","158px");
+                return
+            };
+            $("#textarea").css("height",`${textareaHeight}px`)
+        });
+        $("#textarea").focusout(function(){
+            if($("#textarea").val().length>280){
+                $("#textarea").css({"background":"#fff","border":"1px solid #ff8200"})
+            }else{
+                $("#textarea").css({"background":"#f0f1f4","border":"1px solid #f0f1f4"})
+            }
+        });
+        $("#textarea").focusin(function(){
+            $("#textarea").css({"background":"#fff","border":"1px solid #ff8200"})
+        })
+    </script>
+</body>
+</html>
