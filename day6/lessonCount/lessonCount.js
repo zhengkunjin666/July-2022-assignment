@@ -35,16 +35,15 @@ const Series = [
 
 // 方法一：
 function lessonCount(datas){
-    let result=datas.map(elem => {
+    return datas.map(elem => {
         let counts=elem.courses.map(elem => elem.lessons.length).reduce((a,b) => a+b);
         return {name: elem.name,count: counts};
     })
-    return result;
 };
 console.log(lessonCount(Series));
-// // 方法二：
+// 方法二：
 // function lessonCount(datas){
-//     let result=datas.map(elem => {
+//     return datas.map(elem => {
 //         let counts=0;
 //         for(let i=0;i<elem.courses.length;i++){
 //             let count=elem.courses[i].lessons.length;
@@ -52,12 +51,11 @@ console.log(lessonCount(Series));
 //         }
 //         return {name: elem.name,count: counts};
 //     });
-//     return result;
 // }
 // console.log(lessonCount(Series));
-// 方法三：
+// // 方法三：
 // function lessonCount(datas){
-//     let result=datas.map(elem => {
+//     return datas.map(elem => {
 //         let counts=0;
 //         elem.courses.forEach(elem => {
 //             let count=elem.lessons.length;
@@ -65,6 +63,5 @@ console.log(lessonCount(Series));
 //         });
 //         return {name: elem.name,count: counts};
 //     });
-//     return result;
 // }
 // console.log(lessonCount(Series));
