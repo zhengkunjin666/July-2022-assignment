@@ -34,9 +34,7 @@ const Series = [
 // return [{ name: 'Web', count: 4}, { name: 'PHP', count: 1}]
 
 // 方法一：
-function lessonCount(datas){
-    return datas.map(elem => {return {name: elem.name,count: elem.courses.map(elem => elem.lessons.length).reduce((a,b) => a+b)}})
-};
+function lessonCount(datas){return datas.map(elem => {return {name: elem.name,count: elem.courses.map(elem => elem.lessons.length).reduce((a,b) => a+b)}})};
 console.log(lessonCount(Series)); 
 // 方法二：
 // function lessonCount(datas){
