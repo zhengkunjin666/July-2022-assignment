@@ -35,12 +35,9 @@ const Series = [
 
 // 方法一：
 function lessonCount(datas){
-    return datas.map(elem => {
-        let counts=elem.courses.map(elem => elem.lessons.length).reduce((a,b) => a+b);
-        return {name: elem.name,count: counts};
-    })
+    return datas.map(elem => {return {name: elem.name,count: elem.courses.map(elem => elem.lessons.length).reduce((a,b) => a+b)}})
 };
-console.log(lessonCount(Series));
+console.log(lessonCount(Series)); 
 // 方法二：
 // function lessonCount(datas){
 //     return datas.map(elem => {
