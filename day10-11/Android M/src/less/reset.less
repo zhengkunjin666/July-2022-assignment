@@ -1,0 +1,56 @@
+
+/* Android M重置样式 */
+@divide: 10;
+@pswWidth: 640;
+@ppr: @divide/@pswWidth * 1rem;
+
+body, fieldset, figure, blockquote, h1, h2, h3, h4, h5, h6, form, input, select, textarea, button, legend, ul, li, ol, dd, dl, dt, div, p, a, span, i, img, pre {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+html * {
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+body, input, textarea, select, button, table {
+  font-size: (28*@ppr);
+  line-height: (28*@ppr);
+}
+a {
+  text-decoration: none;
+}
+img, input, label, select {
+  vertical-align: middle;
+}
+fieldset, img {
+  border: 0;
+}
+address, cite, dfn, em, i, var {
+  font-style: normal;
+}
+ol, ul {
+  list-style: none;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #c3c3c3;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #c3c3c3;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #c3c3c3;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #c3c3c3;
+}

@@ -1,0 +1,488 @@
+@divide: 10;
+@pswWidth: 640;
+@ppr: @divide/@pswWidth * 1rem;
+
+
+body{
+    min-width: (@pswWidth*@ppr);
+    max-width: (2*@pswWidth*@ppr);
+    background-size: 100% auto;
+    color: #000;
+}
+.m-ban,.m-success{
+    i {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: (26*@ppr);
+        width: (196*@ppr);
+        height: (82*@ppr);
+        background: #35b558;
+        border-bottom-right-radius: (15*@ppr);
+        text-align: center;
+        padding-top: (20*@ppr);
+        img {
+            width: (135*@ppr);
+            height: (49*@ppr);
+        }
+    };
+}
+.m-ban{
+    height: (682*@ppr);
+    background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/step01.jpg") no-repeat 0 0 / 100% auto;
+    position: relative;
+    padding-top: (116*@ppr);
+    text-align: center;
+    h2 {
+        border-top: (2*@ppr) solid #ffffff;
+        border-bottom: (2*@ppr) solid #ffffff;
+        width: (400*@ppr);
+        height: (68*@ppr);
+        line-height: (68*@ppr);
+        font-size: (24*@ppr);
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: (30*@ppr);
+        text-align: center;
+        display: inline-block;
+    };
+    h1 {
+        display: inline-block;
+        font-size: (50*@ppr);
+        line-height: (60*@ppr);
+        font-weight: 500;
+        color: #fff;
+    };
+    .banCon {
+        width: 100%;
+    };
+    form {
+        margin-top: (100*@ppr);
+        text-align: center;
+        position: relative;
+        .telCon {
+            padding-left: (40*@ppr);
+            padding-top: (10*@ppr);
+            padding-bottom: (10*@ppr);
+            color: #616161;
+            background: #fff;
+            font-size: (28*@ppr);
+            text-align: left;
+        };
+        .errortext {
+            position: absolute;
+            top: 0;
+            right: (64*@ppr);
+            color: #ff0000;
+            font-size: (24*@ppr);
+            height: (90*@ppr);
+            line-height: (90*@ppr);
+        };
+        .subBtn {
+            margin-top: (26*@ppr);
+        }
+    }
+}
+.mBtn {
+    display: block;
+    width: (560*@ppr);
+    height: (90*@ppr);
+    border: (2*@ppr) solid #e72c2b;
+    margin: 0 auto;
+    border-radius: (10*@ppr);
+    line-height: (90*@ppr);
+    background: #e72c2b;
+    font-size: (40*@ppr);
+    color: #fff;
+    text-align: center;
+}
+.m-jl {
+    height: (560*@ppr);
+    background: #101010;
+    img {
+        width: 100%;
+        height: (560*@ppr);
+    }
+}
+.m-ted {
+    height: (930*@ppr);
+    width: 100%;
+    background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/step03.jpg") no-repeat 0 0 / 100% auto;
+    .mtedTit {
+        width: (640*@ppr);
+        height: (240*@ppr);
+        font-size: (36*@ppr);
+        color: #fff;
+        font-weight: 500;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        line-height: (60*@ppr);
+        span {
+            color: #3cb45d;
+        }
+    };
+    .mtedCon ul {
+        padding-left: (70*@ppr);
+        li {
+            height: (154*@ppr);
+            margin-bottom: (60*@ppr);
+            .mtedConLeft {
+                float: left;
+                height: (154*@ppr);
+                width: (154*@ppr);
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            };
+            .mtedConRight {
+                float: left;
+                width: (400*@ppr);
+                height: (154*@ppr);
+                padding-left: (30*@ppr);
+                .tednmae {
+                    font-size: (28*@ppr);
+                    line-height: (60*@ppr);
+                    color: #fff;
+                    font-weight: 500;
+                    width: (210*@ppr);
+                    position: relative;
+                };
+                .tedage {
+                    width: (110*@ppr);
+                    height: (30*@ppr);
+                    background: #00ffa8;
+                    border-radius: (15*@ppr);
+                    font-size: (20*@ppr);
+                    line-height: (32*@ppr);
+                    text-align: center;
+                    font-weight: 500;
+                    color: #101010;
+                    position: absolute;
+                    top: (15*@ppr);
+                    left: (100*@ppr);
+                };
+                p {
+                    font-size: (24*@ppr);
+                    line-height: (32*@ppr);
+                    color: #3cb45d;
+                };
+                .fontBlod {
+                    font-weight: 500;
+                }
+                .colorWhite {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.m-video {
+    height: (800*@ppr);
+    background: #101010;
+    .mvideoTit {
+        height: (150*@ppr);
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+        line-height: (150*@ppr);
+        span {
+            color: #3cb45d;
+        }
+    };
+    .mvideoCon {
+        height: (500*@ppr);
+        position: relative;
+        background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/step04.jpg") no-repeat 0 0 / 100% auto;
+        .mplay {
+            position: absolute;
+            width: (154*@ppr);
+            height: (154*@ppr);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/mplay.png") no-repeat 0 0 / auto 100%;
+        };
+        .video-mask {
+            width: 100%;
+            height: (500*@ppr);
+            background: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            .video-a {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 55;
+            };
+            .btn-close {
+                width: (45*@ppr);
+                height: (45*@ppr);
+                position: absolute;
+                top: (10*@ppr);
+                right: (10*@ppr);
+                background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/close.png") no-repeat center center / (45*@ppr) (45*@ppr);
+            }
+        }
+    };
+    .mvideoBottom .mvideoBottomLeft {
+        float: left;
+        width: (190*@ppr);
+        height: (100*@ppr);
+        background: #3cb45d;
+        padding-top: (30*@ppr);
+        text-align: center;
+        img {
+            width: (135*@ppr);
+            height: (49*@ppr);
+        }
+    };
+    .mvideoBottom .mvideoBottomRight {
+        float: left;
+        width: (450*@ppr);
+        height: (100*@ppr);
+        background: #8861b1;
+        text-align: center;
+        color: #43285f;
+        font-weight: 500;
+        line-height: (100*@ppr);
+        font-size: (36*@ppr);
+        span {
+            color: #fff;
+        }
+    }
+}
+.m-step {
+    height: (1046*@ppr);
+    background: #112437;
+    padding-top: (60*@ppr);
+    .stepTitCon {
+        height: (128*@ppr);
+        margin-right: (56*@ppr);
+        padding-right: (20*@ppr);
+        text-align: right;
+        border-right: (8*@ppr) solid #3cb45d;
+        p {
+            color: #fff;
+            font-size: (36*@ppr);
+            line-height: (42*@ppr);
+            &:last-child {
+                color: #3cb45d;
+                line-height: (50*@ppr);
+                font-weight: 500;
+            }
+        }
+    };
+    .stepMainCon {
+        height: (673*@ppr);
+        background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/step05.png") no-repeat 0 0 / auto (673*@ppr);
+        margin-left: (100*@ppr);
+        ul li {
+            height: (150*@ppr);
+            padding-left: (100*@ppr);
+            .stepStart {
+                top: (-50*@ppr);
+                background: #8861b1;
+                color: #fff;
+                font-size: (24*@ppr);
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                font-weight: 500;
+            };
+            div {
+                width: (126*@ppr);
+                height: (126*@ppr);
+                border-radius: 50%;
+                background: #ccc;
+                position: relative;
+                left: (-143*@ppr);
+            };
+            p {
+                font-size: (26*@ppr);
+                line-height: (36*@ppr);
+                color: #fff;
+                font-weight: 500;
+                &:first-child {
+                    font-weight: 400;
+                }
+            };
+            .stepEnd {
+                top: (-80*@ppr);
+                background: #00ffa8;
+                color: #333;
+                font-size: (26*@ppr);
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                font-weight: 500;
+            }
+        }
+    }
+}
+.m-job {
+    background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/step06.jpg") no-repeat 0 0 / 100% auto;
+    width: 100%;
+    height: (516*@ppr);
+    text-align: center;
+    padding-top: (80*@ppr);
+    p {
+        font-size: (34*@ppr);
+        line-height: (50*@ppr);
+        color: #fff;
+        span {
+            color: #3cb45d;
+        }
+    }
+}
+.m-who {
+    position: relative;
+    background: #1f1f34;
+    .whoiam {
+        width: 100%;
+        background: #1f1f34;
+        height: (1400*@ppr);
+        text-align: center;
+        padding-top: (74*@ppr);
+        .tit1 {
+            font-size: (34*@ppr);
+            font-weight: 500;
+            color: #3cb45d;
+            line-height: (64*@ppr);;
+        };
+        .tit {
+            font-size: (25*@ppr);
+            line-height: (40*@ppr);
+            color: #fff;
+            i {
+                display: inline-block;
+                width: (106*@ppr);
+                height: (40*@ppr);
+                background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/jklogo.png") no-repeat 0 0 / 100% auto;
+                position: relative;
+                left: (-10*@ppr);
+                top: (10*@ppr);
+            }
+        };
+        .who li {
+            display: inline-block;
+            width: 30%;
+            height: (133*@ppr);
+            background: orange;
+            margin-top: (65*@ppr);
+            div {
+                position: relative;
+                top: (160*@ppr);
+                color: #fff;
+                font-size: (30*@ppr);
+                line-height: (40*@ppr);
+                span {
+                    font-size: (50*@ppr);
+                }
+            }
+        };
+        .who .w1 {
+            background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/w3.png") no-repeat center center / (132*@ppr) auto;
+        };
+        .who .w2 {
+            background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/w2.png") no-repeat center center / (132*@ppr) auto;
+        };
+        .who .w3 {
+            background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/w1.png") no-repeat center center / (132*@ppr) auto;
+        };
+        .rongyao {
+            position: relative;
+            top: (250*@ppr);
+            height: (640*@ppr);
+            .tit2 {
+                color: #2ed871;
+                font-size: (30*@ppr);
+                position: relative;
+                top: (-60*@ppr);
+            };
+            li {
+                display: inline-block;
+                width: (258*@ppr);
+                height: (184*@ppr);
+                background: orange;
+                margin: (20*@ppr);
+                margin-bottom: (100*@ppr);
+                margin-top: 0;
+                p {
+                    font-size: (18*@ppr);
+                    color: #fff;
+                    position: relative;
+                    top: (200*@ppr);
+                }
+            };
+            .r1 {
+                background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/r4.png") no-repeat center center / 100% auto;
+            };
+            .r2 {
+                background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/r3.png") no-repeat center center / 100% auto;
+            };
+            .r3 {
+                background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/r2.png") no-repeat center center / 100% auto;
+            };
+            .r4 {
+                background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/r1.png") no-repeat center center / 100% auto;
+            }
+        }
+    }
+}
+.flexbottom {
+    width: 100%;
+    height: (160*@ppr);
+    background: #f03300;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 99;
+    color: #fff;
+    .flexbottomtext1 {
+        margin-top: (40*@ppr);
+        display: inline-block;
+        width: (560*@ppr);
+        height: (80*@ppr);
+        background: #ea6919;
+        line-height: (80*@ppr);
+        font-size: (36*@ppr);
+        color: #fff;
+        font-weight: 500;
+        border-radius: (6*@ppr);
+    }
+}
+.pagetwo {
+    display: none;
+}
+.m-success {
+    height: (586*@ppr);
+    background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/step08.jpg") no-repeat center center / 100% auto;
+    position: relative;
+    padding-top: (280*@ppr);
+    .mstext1 {
+        font-size: (40*@ppr);
+        color: #3ae268;
+        text-align: center;
+        line-height: (54*@ppr);
+    };
+    .mstext2 {
+        font-size: (28*@ppr);
+        line-height: (54*@ppr);
+        text-align: center;
+        color: #fff;
+    };
+    .mBtn {
+        margin-top: (50*@ppr);
+    }
+}
+.m-student {
+    height: (1070*@ppr);
+    background: url("https://j.jikexueyuan.com/Current/home/css/violent/webm/img/step09.jpg") no-repeat center center / 100% auto;
+}
