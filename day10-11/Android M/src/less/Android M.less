@@ -60,23 +60,31 @@ body{
         margin-top: (100*@ppr);
         text-align: center;
         position: relative;
-        .telCon {
-            padding-left: (40*@ppr);
-            padding-top: (10*@ppr);
-            padding-bottom: (10*@ppr);
-            color: #616161;
+        .tel-wrapper{
             background: #fff;
-            font-size: (28*@ppr);
-            text-align: left;
-        };
-        .errortext {
-            position: absolute;
-            top: 0;
-            right: (64*@ppr);
-            color: #ff0000;
-            font-size: (24*@ppr);
-            height: (90*@ppr);
-            line-height: (90*@ppr);
+            display: flex;
+            .telCon {
+                padding-left: (40*@ppr);
+                padding-top: (10*@ppr);
+                padding-bottom: (10*@ppr);
+                color: #616161;
+                background: #fff;
+                font-size: (28*@ppr);
+                text-align: left;
+                border-radius: (10*@ppr);
+                flex: 1;
+                display: block;
+                height: 100%;
+            };
+            .errortext {
+                position: absolute;
+                top: 0;
+                right: (64*@ppr);
+                color: #ff0000;
+                font-size: (24*@ppr);
+                height: (90*@ppr);
+                line-height: (90*@ppr);
+            };
         };
         .subBtn {
             margin-top: (26*@ppr);

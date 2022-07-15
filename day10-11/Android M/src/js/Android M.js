@@ -74,7 +74,7 @@ const PAGE={
         let vMask=document.getElementById('vMask');
         vMask.style.display="block";
         let videoA=document.getElementById('videoA');
-        videoA.play();
+        setTimeout(function(){videoA.play()},300)
     },
     closeVideo: function(){
         let vMask=document.getElementById('vMask');
@@ -83,14 +83,13 @@ const PAGE={
         videoA.pause();
     },
     getBanner: function(){
-        let docElement=document.documentElement;
-        let begin=docElement.scrollTop;
+        let begin=document.scrollingElement.scrollTop;
         let end=0;
         let duration=800;
         PAGE.animateTo(begin,end,duration,function(value){
-            docElement.scrollTop=value;
+            document.scrollingElement.scrollTop=value;
         },function(value){
-            docElement.scrollTop=value;
+            document.scrollingElement.scrollTop=value;
         })
     },
     animateTo: function(begin,end,duration,changCallback,finishCallback){

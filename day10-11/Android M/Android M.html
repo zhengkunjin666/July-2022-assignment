@@ -20,8 +20,10 @@
           <h1>HTML/Web工程师!</h1>
           <div class="banCon">
             <form>
-              <input type="text" class="mBtn  telCon" id="getTel" placeholder="请输入你的手机号">
-              <span class="errortext" id="errorText"></span>
+              <div class="mBtn tel-wrapper">
+                <input type="text" class="telCon" id="getTel" placeholder="请输入你的手机号">
+                <span class="errortext" id="errorText"></span>
+              </div>
               <a href="javascript:;" class="mBtn subBtn" id="getBtn">马上申请试学 &gt;</a>
             </form>
           </div>
@@ -77,7 +79,7 @@
           <div class="mvideoCon">
             <i class="mplay" id="playA"></i>
             <div class="video-mask" id="vMask">
-              <video id="videoA" class="video-a" controls="controls" preload="autoplay" mediagroup="myVideoGroup" poster="">
+              <video id="videoA" class="video-a" controls="controls" preload="autoplay" mediagroup="myVideoGroup" autoplay="true" x5-video-player-type="h5">
                 <source id="mp4" src="http://wirrorcdn.jikexueyuan.com/jiuye/video/show.mp4" type="video/mp4">
                 <p>Your user agent does not support the HTML5 Video element.</p>
               </video>
