@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+</head>
+<body>
+    <p id="text"></p>
+    <script>
+        fetch('http://localhost:5000/api/isbn?isbn=9787519464356').then(response=>{
+        // fetch('http://192.168.31.235:5000/api/isbn?isbn=9787519464356').then(response=>{//此地址可在连接相同WLAN的手机上使用并查看
+            return response.json();
+        }).then(res=>{
+            let text=document.getElementById('text');
+            console.log(res)
+            text.innerText=res.data.data.name;
+        }).catch(err=>{
+            text.innerText=err;
+        })
+    </script>
+</body>
+</html>
