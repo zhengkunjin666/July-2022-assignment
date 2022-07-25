@@ -1,0 +1,60 @@
+html,body{
+    min-width: 1800px;
+}
+main{
+    width: 100%;
+    height: 800px;
+    background: url(/images/login_bg.png) no-repeat center / cover;
+    position: relative;
+}
+.login-card{
+    width: 500px;
+    height: 500px;
+    background: rgb(194, 246, 51);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .login-title{
+        font-size: 40px;
+        text-align: center;
+        margin-top: 60px;
+    };
+    form{
+        margin-top: 30px;
+        input{
+            width: 320px;
+            font-size: 25px;
+            line-height: 80px;
+            background: none;
+            border-bottom: 1px solid yellowgreen;
+            display: block;
+            margin: 30px auto;
+        };
+        .phone-wrapper{
+            position: relative;
+            .errortext{
+                position: absolute;
+                top: 0;
+                right: 90px;
+                color: #ff0000;
+                font-size: 18px;
+                height: 80px;
+                line-height: 80px;
+            };}
+        #login-btn{
+            width: 320px;
+            height: 60px;
+            font-size: 28px;
+            color: green;
+            letter-spacing: 5px;
+            line-height: 60px;
+            text-align: center;
+            background: yellow;
+            border-radius: 10px;
+            display: block;
+            margin: 40px auto;
+            cursor: pointer;
+        }
+    }
+}

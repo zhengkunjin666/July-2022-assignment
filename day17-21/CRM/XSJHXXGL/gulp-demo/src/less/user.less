@@ -1,0 +1,51 @@
+.container{
+    table{
+        margin: 30px auto;
+        caption{
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 40px
+        };
+        th,td{
+            height: 40px;
+            font-size: 20px;
+            border: 1px solid yellowgreen;
+            white-space: nowrap;
+            padding: 0 40px;
+        };
+        th{
+            height: 50px;
+            font-weight: 600;
+        };
+        thead tr,tr:nth-child(2n){
+            background: rgb(221, 243, 181);
+        }
+        .phone,.password{
+            padding: 0px 80px;
+        }
+        .delete{
+            padding: 0 50px;
+            cursor: pointer;
+            &:hover{
+                color: yellowgreen;
+            }
+        };
+        .update{
+            padding: 0 50px;
+            cursor: pointer;
+            &:hover{
+                background: yellowgreen;
+            }
+        };
+    };
+    button{
+        margin: 60px auto;
+        font-size: 25px;
+        color: #fff;
+        background: yellowgreen;
+        padding: 10px 30px;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}

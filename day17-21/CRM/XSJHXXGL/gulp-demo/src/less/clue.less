@@ -1,0 +1,102 @@
+.container{
+    table{
+        margin: 30px auto;
+        position: relative;
+        .filter-container{
+            font-size: 20px;
+            text-align: left;
+            display: table-cell;
+            vertical-align: middle;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            .filter-title{
+                display: inline-block;
+            };
+            .filter-show{
+                min-width: 135px;
+                font-weight: 400;
+                display: inline-block;
+                .show-icon{
+                    color: green;
+                    font-size: 25px;
+                    cursor: pointer;
+                    margin-left: 30px
+                }
+            };
+            .filter-list{
+                min-width: 150px;
+                font-weight: 400;
+                background: rgb(200, 250, 102);
+                position: absolute;
+                top: 30px;
+                left: 55px;
+                display: none;
+                .filter-item{
+                    padding: 10px 40px 10px 10px;
+                    cursor: pointer;
+                    &:hover{
+                        color: #fff;
+                        background: green;
+                    }
+                };
+            };
+            .filter-wrapper{
+                height: 30px;
+                border: 1px solid yellowgreen;
+                border-radius: 8px;
+                display: inline-block;
+                .filter-input{
+                    width: 200px;
+                    font-size: 20px;
+                    background: none;
+                    line-height: 30px;
+                    padding-left: 10px;
+                }
+                .filter-btn{
+                    width: 60px;
+                    height: 28px;
+                    font-size: 20px;
+                    background: rgb(200, 250, 102);
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        caption{
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        };
+        th,td{
+            height: 40px;
+            font-size: 20px;
+            border: 1px solid yellowgreen;
+            white-space: nowrap;
+            padding: 0 20px;
+        };
+        th{
+            height: 50px;
+            font-weight: 600;
+            .clue-orderby{
+                float: right;
+                margin: -3px 0px 0px 20px;
+                cursor: pointer;
+            }
+        };
+        thead tr,tr:nth-child(2n){
+            background: rgb(221, 243, 181);
+        }
+        .phone,.time{
+            padding: 0px 60px;
+        }
+    };
+    .track{
+        color: rgb(10, 241, 10);
+        cursor: pointer;
+        &:hover{
+            color: green;
+        }
+    }
+}

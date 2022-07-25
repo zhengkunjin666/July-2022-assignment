@@ -1,0 +1,97 @@
+html,body{
+    min-width: 1800px;
+}
+main{
+    width: 100%;
+    height: 800px;
+    background-color: #fff;
+    flex-direction: column;
+    .order-container{
+        width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        .order-title{
+            width: 800px;
+            font-size: 40px;
+            text-align: center;
+            letter-spacing: 10px;
+            margin: 60px auto;
+            position: relative;
+            &::before{
+                content: '';
+                width: 600px;
+                height: 1px;
+                background: yellowgreen;
+                position: absolute;
+                top: 50%;
+                left: -340px;
+            }
+            &::after{
+                content: '';
+                width: 600px;
+                height: 1px;
+                background: yellowgreen;
+                position: absolute;
+                top: 50%;
+                right: -330px;
+            }
+        };
+        .landing-bg{
+            height: 500px;
+            float: right;
+            margin-top: 50px;
+        }
+    }
+}
+.order-card{
+    width: 500px;
+    height: 500px;
+    float: left;
+    .order-desc{
+        font-size: 20px;
+        text-align: left;
+        line-height: 40px;
+        margin-top: 60px;
+    };
+    form{
+        margin-top: 40px;
+        input{
+            width: 100%;
+            font-size: 25px;
+            line-height: 80px;
+            background: none;
+            border-bottom: 1px solid yellowgreen;
+            display: block;
+            margin: 30px auto;
+        };
+        .phone-wrapper{
+            position: relative;
+            .errortext{
+                position: absolute;
+                top: 0;
+                right: 90px;
+                color: #ff0000;
+                font-size: 18px;
+                height: 80px;
+                line-height: 80px;
+            };}
+        #order-btn{
+            width: 500px;
+            height: 60px;
+            font-size: 28px;
+            color: green;
+            letter-spacing: 5px;
+            line-height: 60px;
+            text-align: center;
+            background: rgb(179, 251, 11);
+            border-radius: 10px;
+            display: block;
+            margin: 40px auto;
+            cursor: pointer;
+            &:hover{
+                color: yellow;
+                background: yellowgreen;
+            }
+        }
+    }
+}
