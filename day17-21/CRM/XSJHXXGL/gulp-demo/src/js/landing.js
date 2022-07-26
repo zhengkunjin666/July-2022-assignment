@@ -36,7 +36,7 @@ const PAGE={
                 location.reload();
             }else{
                 alert("预约失败！")
-                console.log(insertFetch.data);
+                // console.log(insertFetch.data);
             }
         }
     },

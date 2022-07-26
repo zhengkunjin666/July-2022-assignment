@@ -27,15 +27,13 @@ class Base{
     }
     filterAll(id,params){
         if(params == "%%"){
-            console.log(id,params)
             return knex(this.table).whereNull(id).orWhere(id,"")
         }
         return knex(this.table).where(id,'like',params)
     }
     filter(role,id,params){
         if(params == "%%"){
-            console.log(role)
-            return knex(this.table).whereNull(id).orWhere(id,"").andWhere(role)
+            return knex(this.table).where(id,null || "").andWhere(role)
         }
         return knex(this.table).where(id,'like',params).andWhere(role)
     }

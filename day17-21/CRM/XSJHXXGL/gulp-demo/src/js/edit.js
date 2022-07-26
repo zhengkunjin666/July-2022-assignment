@@ -23,7 +23,6 @@ const PAGE={
         let id=event.target.dataset.id;
         let name=document.getElementById('edit-name').value.trim();
         let phone=document.getElementById('edit-phone').value.trim();
-        console.log(document.getElementById('edit-password').value.trim())
         let password=document.getElementById('edit-password').value.trim();
         let role=document.getElementById('edit-role').value.trim();
         let csrf=document.getElementById('csrf').value;
@@ -57,7 +56,7 @@ const PAGE={
             }
         }else{
             alert("保存失败！");
-            console.log(UpdateFetch.data);
+            // console.log(UpdateFetch.data);
         }
     },
     isMobile: function(val){

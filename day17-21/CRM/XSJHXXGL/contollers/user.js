@@ -49,7 +49,6 @@ const userController={
         let phone=req.body.phone;
         let password=req.body.password
         let role=req.body.role;
-        console.log(id,name,phone,password,role)
         if(!id || !name || !phone || !password || !role){
             res.json({code: 0,data: '缺少参数！'});
             return
@@ -92,7 +91,6 @@ const userController={
         let phone=req.body.phone;
         let password=req.body.password;
         let role=req.body.role;
-        console.log(name,phone,password,role);
         if(!name || !phone || !password || !role){
             res.json({code: 0,data: "缺少参数！"});
             return

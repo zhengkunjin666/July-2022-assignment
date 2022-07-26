@@ -23,6 +23,7 @@
                     <li class="filter-item" data-id="time">创建时间</li>
                     <li class="filter-item" data-id="salesperson">跟踪销售</li>
                     <li class="filter-item" data-id="state">状态</li>
+                    <li class="filter-item" data-id="" style="height: 40px"></li>
                 </ul>
                 <div class="filter-wrapper">
                     <input class="filter-input" id="filter-input" type="text" placeholder="请输入查找内容">

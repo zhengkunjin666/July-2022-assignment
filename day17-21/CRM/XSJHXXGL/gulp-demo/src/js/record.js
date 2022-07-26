@@ -135,7 +135,7 @@ const PAGE={
             location.assign(`/admin/clue/record?id=${id}`);
         }else{
             alert("添加失败！");
-            console.log(InsertFetch.data);
+            // console.log(InsertFetch.data);
         }
     }
 };

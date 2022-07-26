@@ -10,7 +10,6 @@ const authController={
             return
         } 
         try{
-            console.log({phone,password})
             const users=await User.select({phone,password});
             const user=users[0];
             if(user){

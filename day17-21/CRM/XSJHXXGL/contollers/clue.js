@@ -102,7 +102,6 @@ const clueController={
         let id=req.body.id;
         let content=req.body.content;
         let time=req.body.time;
-        console.log(id,content,time)
         if(!id || !content || !time){
             res.json({code: 0,data: "缺少参数！"});
             return

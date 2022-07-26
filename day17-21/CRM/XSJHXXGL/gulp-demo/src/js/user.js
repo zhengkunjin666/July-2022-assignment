@@ -49,7 +49,7 @@ const PAGE={
                     location.reload();
                 }else{
                     alert("删除失败！");
-                    console.log(DeleteFetch.data);
+                    // console.log(DeleteFetch.data);
                 }
             }
         }

@@ -36,7 +36,7 @@ const PAGE={
                 location.reload();
             }else{
                 alert(loginFetch.data.msg)
-                console.log(loginFetch.data);
+                // console.log(loginFetch.data);
             }
         }
     },

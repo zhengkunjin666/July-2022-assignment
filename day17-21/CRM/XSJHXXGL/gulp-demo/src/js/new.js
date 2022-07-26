@@ -54,7 +54,7 @@ const PAGE={
             }
         }else{
             alert("新增失败！");
-            console.log(InsertFetch.data);
+            // console.log(InsertFetch.data);
         }
     },
     isMobile: function(val){
